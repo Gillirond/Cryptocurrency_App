@@ -1,0 +1,74 @@
+#container-main {
+  width: 100%;
+  text-align: center;
+}
+
+#header {
+  position: absolute;
+  width: 600px;
+  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0px;
+  right: 0px;
+}
+
+#viewer {
+  position: absolute;
+  width: 600px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0px;
+  right: 0px;
+}
+
+.currency-block {
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  padding: 20px 15px 15px 12px;
+}
+
+.currency-block .curr_ico {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  float: left;
+  background-size: contain;
+  background-color: grey;
+  margin: 0px 20px 20px 0px;
+
+}
+
+.currency-block .curr_name {
+  display: inline-block;
+  float: left;
+  margin: 6px 20px 20px 0px;
+}
+
+.currency-block .curr_price {
+  display: inline-block;
+  float: right;
+  margin: 6px 0px 20px 20px;
+}
+
+.currency-block .curr_24h {
+  display: inline-block;
+  float: left;
+  margin: 0px 20px 0px 0px;
+}
+
+.currency-block .curr_7d {
+  display: inline-block;
+  float: right;
+  margin: 0px 0px 0px 20px;
+}
+
+.percent {
+  display: inline-block;
+}
+
+
+.clear {
+  clear: both;
+}

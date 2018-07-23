@@ -4,9 +4,12 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 
+import {ShowRealImgDirective} from './showRealImg.directive';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ShowRealImgDirective
   ],
   imports: [
     BrowserModule,
