@@ -4,18 +4,22 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 
+import { WINDOW_PROVIDERS } from "./window.service";
+
 import {ShowRealImgDirective} from './showRealImg.directive';
+import {ColourPercentDirective} from './currency-percent-change.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ShowRealImgDirective
+    ShowRealImgDirective,
+    ColourPercentDirective
   ],
   imports: [
     BrowserModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [ WINDOW_PROVIDERS ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
