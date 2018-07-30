@@ -9,7 +9,7 @@ export class ShowRealImgDirective implements OnInit{
   @Input("realsrc") imgRealSrc='';
   private loaded = false;
 
-  /*@HostListener("window:scroll", []) loadIconsAftrScrollEvent() {
+  @HostListener("window:scroll", []) loadIconsAftrScrollEvent() {
     if(!this.loaded) {
       if(this.isVisible(this.elementRef.nativeElement)) {
         this.elementRef.nativeElement.style.backgroundImage = this.imgRealSrc;
@@ -17,10 +17,9 @@ export class ShowRealImgDirective implements OnInit{
         console.log("scrolled");
       }
     }
-  };*/
+  };
 
   ngOnInit() {
-    this.elementRef.nativeElement.style.backgroundImage = this.imgRealSrc;
   }
 
   constructor(private elementRef: ElementRef, @Inject(DOCUMENT) private document: Document, @Inject(WINDOW) private window: Window) {
@@ -28,7 +27,6 @@ export class ShowRealImgDirective implements OnInit{
 
   isVisible = function(elem) {
     let coords = elem.getBoundingClientRect();
-    console.log();
 
     let windowHeight = this.document.documentElement.clientHeight;
 
